@@ -1,397 +1,345 @@
-The Python programming language is an Open Source, cross-platform, high level, dynamic, interpreted [1] language.
+Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.
 
-The Python 'philosophy' emphasises readability, clarity and simplicity, whilst maximising the power and expressiveness available to the programmer. The ultimate compliment to a Python programmer is not that his code is clever, but that it is elegant. For these reasons Python is an excellent 'first language', while still being a powerful tool in the hands of the seasoned and cynical programmer.
+    Python is Interpreted − Python is processed at runtime by the interpreter. You do not need to compile your program before executing it. This is similar to PERL and PHP.
 
-Python is a very flexible language. It is widely used for many different purposes. Typical uses include :
+    Python is Interactive − You can actually sit at a Python prompt and interact with the interpreter directly to write your programs.
 
-    Web application programming with frameworks like Zope, Django and Turbogears
-    System administration tasks via simple scripts
-    Desktop applications using GUI toolkits like Tkinter or wxPython (and recently Windows Forms and IronPython)
-    Creating windows applications, using the Pywin32 extension for full windows integration and possibly Py2exe to create standalone programs
-    Scientific research using packages like Scipy and Matplotlib
+    Python is Object-Oriented − Python supports Object-Oriented style or technique of programming that encapsulates code within objects.
 
-This is a brief introduction to the Python and its basic datatypes. It may someday become a full Python tutorial.
+    Python is a Beginner's Language − Python is a great language for the beginner-level programmers and supports the development of a wide range of applications from simple text processing to WWW browsers to games.
 
-If you have any specific questions to do with Python programming, you should try the Python Newsgroup, which is generally a friendly place.
+History of Python
 
-For further resources, try the following sites :
+Python was developed by Guido van Rossum in the late eighties and early nineties at the National Research Institute for Mathematics and Computer Science in the Netherlands.
 
-    Voidspace Python Articles
-    The Python Website
-    Awaretek Directory of Python Tutorials
+Python is derived from many other languages, including ABC, Modula-3, C, C++, Algol-68, SmallTalk, and Unix shell and other scripting languages.
 
-The Interactive Interpreter
+Python is copyrighted. Like Perl, Python source code is now available under the GNU General Public License (GPL).
 
-You can download Python for almost every platform from the Python website. Linux and Mac OS X will almost certainly already have Python installed, but it may not be the latest version.
+Python is now maintained by a core development team at the institute, although Guido van Rossum still holds a vital role in directing its progress.
+Python Features
 
-We recommend using the latest stable version of Python, which at the time of writing is Python 2.5.
+Python's features include −
 
-After installing Python, launch the interpreter. On a Linux platform you should be able to do this by typing python at a command prompt. On windows you should double click on the Python icon.
+    Easy-to-learn − Python has few keywords, simple structure, and a clearly defined syntax. This allows the student to pick up the language quickly.
 
-This will launch the interactive interpreter. It will look something like this :
+    Easy-to-read − Python code is more clearly defined and visible to the eyes.
 
-Python 2.5 (r25:51908, Sep 19 2006, 09:52:17) [MSC v.1310 32 bit (Intel)] on win32
-Type "help", "copyright", "credits" or "license" for more information.
->>>
+    Easy-to-maintain − Python's source code is fairly easy-to-maintain.
 
-The interactive interpreter allows you to type in individual Python commands, and see the results straight away. It is a great way to experiment, but also a useful tool.
+    A broad standard library − Python's bulk of the library is very portable and cross-platform compatible on UNIX, Windows, and Macintosh.
 
-Type x = 3, then hit enter, followed by print x followed by enter. You should see the following results in your interpreter 'session' :
+    Interactive Mode − Python has support for an interactive mode which allows interactive testing and debugging of snippets of code.
 
-Python 2.5 (r25:51908, Sep 19 2006, 09:52:17) [MSC v.1310 32 bit (Intel)] on win32
-Type "help", "copyright", "credits" or "license" for more information.
->>> x = 3
->>> print x
-3
->>>
+    Portable − Python can run on a wide variety of hardware platforms and has the same interface on all platforms.
 
-Creating and Running Programs
+    Extendable − You can add low-level modules to the Python interpreter. These modules enable programmers to add to or customize their tools to be more efficient.
 
-In order to be a useful language we have to be able to create programs and run them.
+    Databases − Python provides interfaces to all major commercial databases.
 
-Running Python Programs
+    GUI Programming − Python supports GUI applications that can be created and ported to many system calls, libraries and windows systems, such as Windows MFC, Macintosh, and the X Window system of Unix.
 
-On Windows computers, installing Python will associate .py files with the Python interpreter. That means that double clicking on a Python file will run the program using Python. The examples in this tutorial are likely to run very fast and exit before you get a chance to see the results.
+    Scalable − Python provides a better structure and support for large programs than shell scripting.
 
-The best way to run these examples is from the command line. To do this :
+Apart from the above-mentioned features, Python has a big list of good features, few are listed below −
 
-    Go to the 'Start' menu and select 'Run'.
-    Type cmd and hit enter.
-    Change the directory to your Python install directory. This will be something similar to c:\Python25, so the command to type is cd c:\Python25.
+    It supports functional and structured programming methods as well as OOP.
 
-On Linux type operating systems you will probably be using the command line anyway. You need to make sure your Python programs are executable (chmod +x program.py) and that the first line is something like #! /usr/bin/env python.
+    It can be used as a scripting language or can be compiled to byte-code for building large applications.
 
-You should then be able to run your program by typing something like ./program.py.
+    It provides very high-level dynamic data types and supports dynamic type checking.
 
-Python programs are just text files that contain instructions for the Python interpreter. You can create them with any text editor (including notepad), or a programmers text editor called an IDE: Integrated Development Environment. IDEs for Python will often have useful built in tools like syntax checkers, debuggers, code browsers and much more.
+    IT supports automatic garbage collection.
 
-Most Python installs include a simple IDE called IDLE, which is very handy.
-Comments
+    It can be easily integrated with C, C++, COM, ActiveX, CORBA, and Java.Python variables do not need explicit declaration to reserve memory space. The declaration happens automatically when you assign a value to a variable. The equal sign (=) is used to assign values to variables.
 
-Any line which starts with a hash (#) is a comment. It will be skipped by the interpreter. There is no multiline comment in Python, you should start every line with a hash instead.
+The operand to the left of the = operator is the name of the variable and the operand to the right of the = operator is the value stored in the variable. For example −
 
-Comments in code are good (so long as you keep them up to date), but nothing like so important as making your code readable. Smile
-Variables
+#!/usr/bin/python
 
-In the interactive interpreter session we actually created a very simple Python program. We created a variable called 'x' and associated it with the value 3, the number. We then printed this value to the screen.
+counter = 100          # An integer assignment
+miles   = 1000.0       # A floating point
+name    = "John"       # A string
 
-In almost any programming language, the 'variable' is the most basic concept. Variables are the way that we can store values and work with them. We might process these values and save them to a file, or perhaps send them across the internet, but variables are the way we keep track of them.
+print counter
+print miles
+print name
 
-The line of code x = 3 is a statement which means it does a job. The job it does is to assign the value 3 to the variable 'x'. In Python terminology we say that it binds the name 'x' to the number three. This idea of variables being names bound to objects (or names which 'reference' objects) is important in Python.
+Here, 100, 1000.0 and "John" are the values assigned to counter, miles, and name variables, respectively. This produces the following result −
 
-A variable name in Python can be almost anything, so long as it obeys certain rules :
+100
+1000.0
+John
 
-    It can only contain ascii characters, digits and underscores (no spaces or other symbols)
-    It cannot start with a digit
-    It cannot be any words from a list of reserved keywords.
+Multiple Assignment
 
-Basic Variable Types
+Python allows you to assign a single value to several variables simultaneously. For example −
 
-Just as variables are a basic concept in programming, so are the different types of values that a variable can have. We call these 'data-types', because they are different types of ways we can store data. In programming the word 'type' has a specific meaning. It is a precise way of categorising different sorts of objects. Every object has a 'type'.
+a = b = c = 1
 
-The most basic data types are listed below.
+Here, an integer object is created with the value 1, and all three variables are assigned to the same memory location. You can also assign multiple objects to multiple variables. For example −
 
-It is often possible to convert between these different types (for example converting the text '10' into the integer value 10), but that is a subject for another day.
-Numbers
+a,b,c = 1,2,"john"
 
-    Integers
+Here, two integer objects with values 1 and 2 are assigned to variables a and b respectively, and one string object with the value "john" is assigned to the variable c.
+Standard Data Types
 
-        An integer is a whole number. In theory any whole number from minus infinity to plus infinity. In practise the range is limited by the computer, but with Python the maximum size is limited only by the amount of memory your computer has !
+The data stored in memory can be of many types. For example, a person's age is stored as a numeric value and his or her address is stored as alphanumeric characters. Python has various standard data types that are used to define the operations possible on them and the storage method for each of them.
 
-        'Under the hood' Python actually uses two types of integer, the integer and the 'long integer' for integers bigger than a certain amount. Occasionally you may care whether a number is an integer or a long integer, but in practise it will rarely matter.
+Python has five standard data types −
 
-    Floating Point Numbers
+    Numbers
+    String
+    List
+    Tuple
+    Dictionary
 
-        Computers are very good at dealing with whole numbers. This is why the 'integer' is a basic data-type. A 'Floating point number' is any number that has digits after the decimal point. For example 6.3 or -1.8.
+Python Numbers
 
-        You can also store your whole numbers as floating point numbers, just include a decimal point when you write it: 1.0 or -6.0. Because dealing with floating point numbers is much more complicated for computers they are much slower to work with. If you know your numbers will be integers then use the integer type.
+Number data types store numeric values. Number objects are created when you assign a value to them. For example −
 
-        You can also write floating point numbers using scientific notation: 1.75e26 (which is a very big number).
+var1 = 1
+var2 = 10
 
-        If you need to a lot of complicated maths with floating point numbers, then you may be interested in extensions like numpy or General Multiprecision Python project. These extensions provide very fast ways of doing mathematical operations. For normal use the capabilities built in to Python will be sufficient.
+You can also delete the reference to a number object by using the del statement. The syntax of the del statement is −
 
-Warning
+del var1[,var2[,var3[....,varN]]]]
 
-In current versions of Python, dividing an integer by an integer will return an integer. You can get unexpected results like :
+You can delete a single object or multiple objects by using the del statement. For example −
 
->>> 7/2
-3
+del var
+del var_a, var_b
 
-To get the answer you expect, one of the numbers must be a floating point number :
+Python supports four different numerical types −
 
->>> 7.0/2
-3.5
+    int (signed integers)
+    long (long integers, they can also be represented in octal and hexadecimal)
+    float (floating point real values)
+    complex (complex numbers)
 
-There is also a complex number basic datatype in Python. They aren't very common, but can be extremely useful for certain types of maths. They are written :
+Examples
 
-    3i + 4j
+Here are some examples of numbers −
+int 	long 	float 	complex
+10 	51924361L 	0.0 	3.14j
+100 	-0x19323L 	15.20 	45.j
+-786 	0122L 	-21.9 	9.322e-36j
+080 	0xDEFABCECBDAECBFBAEl 	32.3+e18 	.876j
+-0490 	535633629843L 	-90. 	-.6545+0J
+-0x260 	-052318172735L 	-32.54e100 	3e+26J
+0x69 	-4721885298529L 	70.2-E12 	4.53e-7j
 
-Strings
+    Python allows you to use a lowercase l with long, but it is recommended that you use only an uppercase L to avoid confusion with the number 1. Python displays long integers with an uppercase L.
 
-A string is any piece of text. Python does not distinguish between a string that is a single character or a large block of text. Because of the many ways that Python provides for working with strings, it is an ideal language to do text processing with.
+    A complex number consists of an ordered pair of real floating-point numbers denoted by x + yj, where x and y are the real numbers and j is the imaginary unit.
 
-The name 'string' probably comes from the fact that programming languages often treat text as a sequence of characters 'stringed' together.
+Python Strings
 
-Python has two different string-types.
+Strings in Python are identified as a contiguous set of characters represented in the quotation marks. Python allows for either pairs of single or double quotes. Subsets of strings can be taken using the slice operator ([ ] and [:] ) with indexes starting at 0 in the beginning of the string and working their way from -1 at the end.
 
-The basic string type (which I have called 'normal strings' below) store the text as a sequence of bytes (numbers) with one byte per character. These should only really be used if you know your text will only have ASCII values in it. Unfortunately they are terribly convenient to use, so many programs just use this sort of string. They can also be used for storing binary data in. They are sometimes called byte-strings, which is quite a good description of what they do.
+The plus (+) sign is the string concatenation operator and the asterisk (*) is the repetition operator. For example −
 
-Unicode strings store text internally using the unicode standard. They are slightly more complicated, because you must know the 'encoding' the text is stored in whenever you read the text in or save it out. In the long run this can save a great deal of confusion.
+#!/usr/bin/python
 
-Below is an overview of the two different string types, and how to include them in your programs.
+str = 'Hello World!'
 
-    Normal Strings
+print str          # Prints complete string
+print str[0]       # Prints first character of the string
+print str[2:5]     # Prints characters starting from 3rd to 5th
+print str[2:]      # Prints string starting from 3rd character
+print str * 2      # Prints string two times
+print str + "TEST" # Prints concatenated string
 
-        You include a string in your program by surrounding it with single quotes or double quotes :
+This will produce the following result −
 
-            x = 'This is a string'
-            y = "And so is this."
+Hello World!
+H
+llo
+llo World!
+Hello World!Hello World!
+Hello World!TEST
 
-        If you want to include a string in your code (a 'string literal') which has line breaks in it, then you can use triple quotes. The quotes can again be single quotes or double quotes :
-        x = """This string
-        goes over multiple lines.
-        So it includes line breaks."""
+Python Lists
 
-        y = '''This string uses single quotes.
-        But it is still multi-line.
-        As you might have guessed.'''
+Lists are the most versatile of Python's compound data types. A list contains items separated by commas and enclosed within square brackets ([]). To some extent, lists are similar to arrays in C. One difference between them is that all the items belonging to a list can be of different data type.
 
-        If you need to include special characters (like a line breaks or a quote character) in a string then you can use escaped characters, shown on this page.
+The values stored in a list can be accessed using the slice operator ([ ] and [:]) with indexes starting at 0 in the beginning of the list and working their way to end -1. The plus (+) sign is the list concatenation operator, and the asterisk (*) is the repetition operator. For example −
 
-        Python follows the Unix convention of using the backslash as the escape character. For example :
-        # The variable x is a string which contains
-        # a single line break
-        x = '\n'
+#!/usr/bin/python
 
-        # The variable y has an escaped quote character
-        # To include the quote in the string (instead of
-        # it terminating the string)
-        y = 'Don\'t worry about quotes'
+list = [ 'abcd', 786 , 2.23, 'john', 70.2 ]
+tinylist = [123, 'john']
 
-        # z is a single character - a backslash which has to be escaped
-        # with another backslash
-        z = '\\'
+print list          # Prints complete list
+print list[0]       # Prints first element of the list
+print list[1:3]     # Prints elements starting from 2nd till 3rd 
+print list[2:]      # Prints elements starting from 3rd element
+print tinylist * 2  # Prints list two times
+print list + tinylist # Prints concatenated lists
 
-        If you want to be able to include backslashes in your strings without having to escape them, you can use a 'raw string'. If you precede the string literal in your code with an r it is a raw string. This is particularly useful for regular expressions which tend to use a lot of backslashes.
-        raw_string = r'a raw string may contain unescaped \s in it'
+This produce the following result −
 
-        Because raw strings are designed to be useful for regular expressions, and not say Windows file paths, they cannot end with a backslash. The backslash will be interpreted as escaping the quote that follows it, as well as being included in the string. Annoying and not very useful in my opinion, but Python can't be too perfect. Razz
+['abcd', 786, 2.23, 'john', 70.200000000000003]
+abcd
+[786, 2.23]
+[2.23, 'john', 70.200000000000003]
+[123, 'john', 123, 'john']
+['abcd', 786, 2.23, 'john', 70.200000000000003, 123, 'john']
 
-        Python strings are stored internally using numbers, they are not encoded using any encoding, the interpreter just receives what you give it and stores it as a sequence of bytes. For this reason basic strings are often referred to as 'byte-strings'. You can also use them to store binary data.
+Python Tuples
 
-        Because they are stored as bytes, your string literals (in your program) should only really contain ASCII characters. You can include non-ASCII by declaring an encoding at the start of your program, but you should only do this if you know what you are doing.
+A tuple is another sequence data type that is similar to the list. A tuple consists of a number of values separated by commas. Unlike lists, however, tuples are enclosed within parentheses.
 
-        If you intend to use (or allow your users to use) non-ASCII characters in your program, then storing strings without specifying an encoding is asking for trouble. Unless you are very careful you will probably end up treating text incorrectly and garbling your data. It is far better to use unicode strings, which are explained briefly below.
+The main differences between lists and tuples are: Lists are enclosed in brackets ( [ ] ) and their elements and size can be changed, while tuples are enclosed in parentheses ( ( ) ) and cannot be updated. Tuples can be thought of as read-only lists. For example −
 
-    Unicode Strings
+#!/usr/bin/python
 
-        As mentioned above, 'normal strings' in Python are byte-strings and store data as a sequence of numbers. This can be very convenient for ASCII text, but as soon as you use non-ASCII characters is a recipe trouble.
+tuple = ( 'abcd', 786 , 2.23, 'john', 70.2  )
+tinytuple = (123, 'john')
 
-        For a good 'how-to' on using Unicode with Python, read A Crash Course in Character Encodings.
+print tuple           # Prints complete list
+print tuple[0]        # Prints first element of the list
+print tuple[1:3]      # Prints elements starting from 2nd till 3rd 
+print tuple[2:]       # Prints elements starting from 3rd element
+print tinytuple * 2   # Prints list two times
+print tuple + tinytuple # Prints concatenated lists
 
-        Unicode strings have an internal representation which keeps text as text. Effectively the computer knows which characters your text compares. You will still have to choose an encoding when you read or write your data.
+This produce the following result −
 
-        You can include unicode literals in your program by preceding the string with a u. Unless you specify the encoding at the start of your program then you should still only use ASCII characters, but you know your string will be stored as unicode rather than a byte string.
+('abcd', 786, 2.23, 'john', 70.200000000000003)
+abcd
+(786, 2.23)
+(2.23, 'john', 70.200000000000003)
+(123, 'john', 123, 'john')
+('abcd', 786, 2.23, 'john', 70.200000000000003, 123, 'john')
 
-        The quoting and escaping rules for unicode strings are the same as for byte strings :
-        x = u'A unicode string'
+The following code is invalid with tuple, because we attempted to update a tuple, which is not allowed. Similar case is possible with lists −
 
-        y = u'''A multi-line unicode
-        string.'''
+#!/usr/bin/python
 
-        y = ru"""This is a
-        raw, multi-line
-        unicode string !!!
-        """
+tuple = ( 'abcd', 786 , 2.23, 'john', 70.2  )
+list = [ 'abcd', 786 , 2.23, 'john', 70.2  ]
+tuple[2] = 1000    # Invalid syntax with tuple
+list[2] = 1000     # Valid syntax with list
 
-        Forcing the Python interpreter to convert between unicode and byte-strings without specifying an explicit encoding can be done, but is just begging for a UnicodeEncodeError or UnicodeDecodeError to bring your program to a 'crashing' halt. This happens when one of the strings that you are 'implicitly' converting, for example by adding a unicode string to a byte string, has characters which can't be represented in the system default encoding (which will usually be ASCII). The article mentioned above (A Crash Course in Character Encodings) explains when this can happen and how to avoid it.
+Python Dictionary
 
-Python strings, like the other built-in types, have lots of useful methods for doing string-type-things with them. Refer to the string methods in the Python docs for a full list.
-Other Useful Values
+Python's dictionaries are kind of hash table type. They work like associative arrays or hashes found in Perl and consist of key-value pairs. A dictionary key can be almost any Python type, but are usually numbers or strings. Values, on the other hand, can be any arbitrary Python object.
 
-There are a few other useful values which can be very handy.
+Dictionaries are enclosed by curly braces ({ }) and values can be assigned and accessed using square braces ([]). For example −
 
-    None: Often written null in other languages, it is usually used to represent 'nothing'.
-    True: The 'boolean' value of true.
-    False: The boolean value of false.
+#!/usr/bin/python
 
-These values turn up a great deal when programming. You can include them in your program by writing them literally :
-x = None
-y = True
-z = False
-More Complex Data Types
+dict = {}
+dict['one'] = "This is one"
+dict[2]     = "This is two"
 
-In order to work with information, you will often want to group data together and work on it in that group. Python contains lots of powerful concepts for doing this, including fancy things like iterators, generators and list comprehensions.
+tinydict = {'name': 'john','code':6734, 'dept': 'sales'}
 
-The most fundamental way of grouping data together is to use 'data-structures'. These are objects that store your values together. With Python you are free to create your own custom data structures, but it has four very powerful ones built in. Objects that store data for you are called containers.
 
-All these four data-types (the list, the tuple, the set and the dictionary) have lots of different operations you can perform on them. Many of these are built-in to them and are called 'methods'. This introduction will not cover these, instead it will just introduce you to them and how you include them in your programs.
-The List
+print dict['one']       # Prints value for 'one' key
+print dict[2]           # Prints value for 2 key
+print tinydict          # Prints complete dictionary
+print tinydict.keys()   # Prints all the keys
+print tinydict.values() # Prints all the values
 
-A list stores a group of items one after the other. It keeps them in order for you. You can add or remove items as you wish, sort your list or search through it to see if it contains a specific value.
+This produce the following result −
 
-You can start with an empty list and add things to it, or use a pre-populated list. Items in your list can be any object, including other lists. This means that you can have lists of lists, and use them to create complex nested structures. They are a very useful fundamental building block.
+This is one
+This is two
+{'dept': 'sales', 'code': 6734, 'name': 'john'}
+['dept', 'code', 'name']
+['sales', 6734, 'john']
 
-A list is written using square brackets, with commas between the items :
-# w is an empty list
-w = []
+Dictionaries have no concept of order among elements. It is incorrect to say that the elements are "out of order"; they are simply unordered.
+Data Type Conversion
 
-# x has only one member
-x = [3.0]
+Sometimes, you may need to perform conversions between the built-in types. To convert between types, you simply use the type name as a function.
 
-# y is a list of numbers
-y = [1, 2, 3, 4, 5]
+There are several built-in functions to perform conversion from one data type to another. These functions return a new object representing the converted value.
+Sr.No. 	Function & Description
+1 	
 
-# z is a list of strings
-# and other lists
-z = ['first', [], 'second', [1, 2, 3, 4], 'third']
+int(x [,base])
 
-We access the members of a list by 'indexing' into it. The index must be an integer representing the position of item. The first item is in position zero. You can index a variable by placing square brackets after the variable with the index in.
+Converts x to an integer. base specifies the base if x is a string.
+2 	
 
-If you try to access a position that does not exist (for example the fifth item of a list with only four members), you will get an IndexError.
+long(x [,base] )
 
-You can access from the end of the list, by using negative indexes. Position -1 is the last item, -2 is the one before the last etc.
->>> x = [1, 2, 3, 4, 5]
->>> print x[0]
-1
->>> print x[4]
-5
->>> print x[-1]
-5
->>> print x[-5]
-1
->>> print x[10]
-Traceback (most recent call last):
-  File "<stdin>", line 1, in ?
-IndexError: list index out of range
+Converts x to a long integer. base specifies the base if x is a string.
+3 	
 
-Lists have lots of methods for working with them. They also have special syntax for working on parts of a list. This is called slicing. See the page on sequence types for details.
-Tuples
+float(x)
 
-Tuples are a lot like lists in that they are used to store sequences of information. Unlike lists they can't be altered after they have been created.
+Converts x to a floating-point number.
+4 	
 
-Because the interpreter knows the length and types of the members of a tuple, working with them can be more efficient than using a list.
+complex(real [,imag])
 
-You can index and slice tuples, but not change them.
+Creates a complex number.
+5 	
 
-You come across tuples 'implicitly' in many places in Python, for example functions that return multiple values return them as a tuple.
+str(x)
 
-Tuples are created using parentheses instead of square brackets :
->>> x = (1, 2, 3,4)
->>> x
-(1, 2, 3, 4)
->>> x[0]
-1
->>> x = (1,)
->>> x
-(1,)
->>> x[0]
-1
->>> x = ()
->>> x
-()
->>> x[0]
-Traceback (most recent call last):
-  File "<stdin>", line 1, in ?
-IndexError: tuple index out of range
+Converts object x to a string representation.
+6 	
 
-You may have noticed that to create a tuple with only one member you need to add a comma into the mix: (1,). (This: (1) isn't a tuple.) To create an empty tuple (there must be a reason why you'd want to do that sometime), do this (), or even this: tuple(). Smile
+repr(x)
 
-By convention in Python, tuples are used when the elements are heterogeneous (different types of objects), lists are used for homogeneous collections. This is a distinction observed more in theory than in practise.
-Dictionaries
+Converts object x to an expression string.
+7 	
 
-Dictionaries are an extremely useful and flexible datatype. In fact Python is built on them. Smile
+eval(str)
 
-Dictionaries store values with keys, so you can look them up with the key. You can use them to build complex nested data-structures or just for storing values.
+Evaluates a string and returns an object.
+8 	
 
-Like the other data-types we've looked at so far, Python has built in syntax for creating dictionaries :
->>> x = {'key1': 'value1', 'key2': 'value2'}
->>> print x
-{'key2': 'value2', 'key1': 'value1'}
+tuple(s)
 
-You can retrieve the values by indexing the dictionary, using the same syntax as for list; except using the key instead of the position. (Dictionaries are unordered by the way.)
->>> x = {'key1': 'value1', 'key2': 'value2'}
->>> print x['key1']
-value1
+Converts s to a tuple.
+9 	
 
-You don't have to use strings as keys, you can use any object that doesn't change (any 'immutable' object). This means that strings and numbers are in and dictionaries and lists are out. Smile
+list(s)
 
-This is another place where tuples come in handy.
->>> attemptedKey = {}
->>> x = {attemptedKey: 'some value to store'}
-Traceback (most recent call last):
-  File "<stdin>", line 1, in ?
-TypeError: dict objects are unhashable
+Converts s to a list.
+10 	
 
->>> anotherTry = (None, 2)
->>> x = {anotherTry: 'some value to store'}
->>> print x
-{(None, 2): 'some value to store'}
+set(s)
 
-See the Mapping Types Reference for a list of methods available on dictionary objects.
-Sets
+Converts s to a set.
+11 	
 
-The set is an extremely useful data type. It was introduced in Python 2.3 and became a built-in in Python 2.4.
+dict(d)
 
-Sets contain unique members. They are very efficient if you want to test if a value is in the set (test for membership). It is a lot faster than checking if an object is in a list.
+Creates a dictionary. d must be a sequence of (key,value) tuples.
+12 	
 
-Unlike the other data-types we've seen, there is no syntax for using them. To create a set, you use the set constructor. See below :
->>> x = set()
->>> x
-set([])
->>> x.add(1)
->>> x
-set([1])
->>> x.add(1)
->>> x
-set([1])
->>> x.add(2)
->>> 1 in x
-True
->>> 2 in x
-True
->>> 3 in x
-False
->>>
-[1]	Programs are actually compiled to byte-code before being executed, but the byte-code is then interpreted. In some ways this is similar to Java or .NET which also compile to byte-code. Because these languages are statically typed with JIT compilers, they are generally considered as compiled languages whilst Python is generally considered as being interpreted.
+frozenset(s)
 
-For buying techie books, science fiction, computer hardware or the latest gadgets: visit The Voidspace Amazon Store.
+Converts s to a frozen set.
+13 	
 
-Hosted by Webfaction
+chr(x)
 
-Return to Top
-Page rendered with rest2web the Site Builder
+Converts an integer to a character.
+14 	
 
-Last edited Tue Aug 2 00:51:34 2011.
+unichr(x)
 
- 
+Converts an integer to a Unicode character.
+15 	
 
-    IronPython in Action
-    IronPython in Action
+ord(x)
 
-    IronPython in Action is the first English book on IronPython. It is for Python and .NET programmers interested in making the most of Python on the .NET framework and Mono.
-    Search Site
-    	Search this Site:
-      	
-    www 	voidspace.org.uk
+Converts a single character to its integer value.
+16 	
 
-    Browsing
+hex(x)
 
-    Home > Python Index > Articles > Intro and Data-Types
-    Blogads
-    Michael Foord
-        Contact Michael
-        Michael on Twitter
-        My bookmarks
-        Shared articles
-        Photos on Flickr
-        Voidspace Amazon Store
-        Amazon Computers: Todays Deals
-    Hosting
-    Managed hosting with webfaction
+Converts an integer to a hexadecimal string.
+17 	
 
- 
+oct(x)
 
-I am free of all prejudice; I hate everyone equally. W C Fields
-
-Copyright © 2009-10 Michael Foord. This work is licensed under a Creative Commons license. Design by Free CSS Templates.
+Converts an integer to an octal string.
